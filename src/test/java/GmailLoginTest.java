@@ -74,13 +74,13 @@ public class GmailLoginTest extends BaseTest {
         appiumDriver.findElement(By.id("passwordNext")).click();
         appiumDriver.findElement(By.id("signinconsentNext")).click();
 
-        Assert.assertTrue("Invalid email address displayed", appiumDriver.findElement(By.id("com.google.android.gms:id/suw_items_title")).getText().contains("foc.solutions.demo@gmail.com"));
+        Assert.assertTrue("Invalid email address displayed", appiumDriver.findElement(By.id("com.google.android.gms:id/suw_items_title")).getText().contains("krypton.mobile.demo@gmail.com"));
 
         appiumDriver.findElement(By.id("com.google.android.gms:id/next_button")).click();
 
         //Validate account Info
-        Assert.assertTrue("Invalid user name displayed", appiumDriver.findElement(By.id("com.google.android.gm:id/account_display_name")).getText().equals("FOC Solutions Demo"));
-        Assert.assertTrue("Invalid email address displayed", appiumDriver.findElement(By.id("com.google.android.gm:id/account_address")).getText().equals("foc.solutions.demo@gmail.com"));
+        Assert.assertTrue("Invalid user name displayed", appiumDriver.findElement(By.id("com.google.android.gm:id/account_display_name")).getText().equals("krypton Demo"));
+        Assert.assertTrue("Invalid email address displayed", appiumDriver.findElement(By.id("com.google.android.gm:id/account_address")).getText().equals("krypton.mobile.demo@gmail.com"));
 
         appiumDriver.findElement(By.id("com.google.android.gm:id/action_done")).click();
 
