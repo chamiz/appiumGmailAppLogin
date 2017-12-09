@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  *
- * Project FOC Solution
+ * Project Gmail Test
  * Created by Chamila Ambahera on 12/2/2017.
  * chamila.ambahera@gmail.com
  */
