@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import java.io.IOException;
 
 /**
- * Project FOC Solution
+ * Project GmailLoginTest
  * Created by Chamila Ambahera on 12/2/2017.
  * chamila.ambahera@gmail.com
  */
@@ -30,7 +30,7 @@ public class GmailLoginTest extends BaseTest {
     public void enterInvalidUsernameTest() {
         handleWelcomeMessages();
 
-        appiumDriver.findElement(By.id("identifierId")).sendKeys("foc.solutions.demo123");
+        appiumDriver.findElement(By.id("identifierId")).sendKeys("krypton.mobile.demo123");
         appiumDriver.findElement(By.id("identifierNext")).click();
 
         //validate error message
@@ -42,11 +42,11 @@ public class GmailLoginTest extends BaseTest {
     public void enterInvalidPasswordTest() {
         handleWelcomeMessages();
 
-        appiumDriver.findElement(By.id("identifierId")).sendKeys("foc.solutions.demo");
+        appiumDriver.findElement(By.id("identifierId")).sendKeys("krypton.mobile.demo");
         appiumDriver.findElement(By.id("identifierNext")).click();
 
         appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).click();
-        appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).sendKeys("foc.solution");
+        appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).sendKeys("mobile.demo");
         appiumDriver.findElement(By.id("passwordNext")).click();
 
 //        Validate the message
@@ -65,11 +65,11 @@ public class GmailLoginTest extends BaseTest {
 
         handleWelcomeMessages();
 
-        appiumDriver.findElement(By.id("identifierId")).sendKeys("foc.solutions.demo");
+        appiumDriver.findElement(By.id("identifierId")).sendKeys("krypton.mobile.demo");
         appiumDriver.findElement(By.id("identifierNext")).click();
 
         appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).click();
-        appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).sendKeys("foc.solutions");
+        appiumDriver.findElement(By.xpath("//android.widget.EditText[@text='Enter your password']")).sendKeys("mobile.demo");
 
         appiumDriver.findElement(By.id("passwordNext")).click();
         appiumDriver.findElement(By.id("signinconsentNext")).click();
