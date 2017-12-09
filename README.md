@@ -17,13 +17,13 @@ Test Gmail App Login function using Appium
 Install Appium doctor and execute to check paths
 
 # Other
-Create Gmail account with
+Login details
 
-user name : "FOC Solutions Demo
+user name : "Krypton Demo"
 <br />
-email  : "foc.solutions.demo@gmail.com"
+email  : "krypton.mobile.demo@gmail.com"
 <br />
-password: "foc.solutions"
+password: "mobile.demo"
 
 # Steps
 1. Open Android Studio -> Manage Emulators 
